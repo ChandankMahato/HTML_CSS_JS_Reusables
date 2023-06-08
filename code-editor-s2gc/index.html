@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="editor-box" id="editor-box">
+
+        <div class="editor-body" id="editor-body">
+            <div class="editor-header" id="editor-header">
+                <div>
+                    <span class="program-type" id="program-type">main.asm</span>
+                </div>
+                <div class="refresh-icon" id="refresh-icon" tooltip="Clear">
+                    <i class="fa fa-refresh">
+                    </i>
+                </div>
+            </div>
+            <div class="editor-container" id="editor-container">
+                <textarea class="line-number" id="line-number" readonly></textarea>
+                <textarea class="code-editor" id="code-editor" is="highlighted-code" language="armasm"
+                    placeholder="write assembly code here..."></textarea>
+                <!-- armasm, arm, avrasm, x86asm, mips, mipsasm-->
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/9be156cf78.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

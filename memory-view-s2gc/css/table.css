@@ -1,0 +1,78 @@
+.memory-container {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.slot-container {
+  overflow-y: auto;
+}
+.memory-view-box table th {
+  font-weight: 400;
+}
+
+.memory-view-box table {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#cellHead,
+#cellBody {
+  border: 1px solid var(--white);
+  padding: 4px;
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cellData {
+  position: relative;
+  border: 1px solid var(--gray);
+  padding: 4px;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--dark);
+  font-size: 0.7rem;
+}
+
+.edit {
+  color: var(--red);
+}
+
+.edited {
+  background-color: var(--lightYellow);
+  color: var(--red);
+}
+
+/* hover styling */
+.hoverCell {
+  background-color: var(--lightYellow);
+}
+
+.directHoverCell {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.cellData::before {
+  content: attr(id);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.cellData:hover::before {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -1,0 +1,13 @@
+:root {
+    --darker: #000000;
+    --dark: #515151;
+    --overlay: rgba(0, 0, 0, 0.4)
+    --red: #d10808;
+    --lightYellow: #c6fd58;
+    --green: #699d00;
+    --darkGreen: #375201;
+    --gray: #9d9d9d;
+    --lightGray: #d0cece;
+    --white: #ffffff;
+    --poppins: "Poppins", sans-serif;
+}
